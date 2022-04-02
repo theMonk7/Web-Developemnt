@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-top: 5px solid aqua;
+  font-family: sans-serif;
+  color: #444;
+  position: relative;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+h1,
+h2,
+h3 {
+  color: rgb(19, 223, 155);
+}
+
+.main-header {
+  margin-bottom: 60px;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid aqua;
+  border-top-left-radius: 15px;
+  border-bottom: 5px solid aqua;
+  padding: 50px 0;
+  width: 50%;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+}
+h1 {
+  font-size: 36px;
+  text-transform: capitalize;
+  font-style: oblique;
+}
+
+h2 {
+  font-size: 44px;
+  font-style: normal;
+}
+p {
+  font-size: 22px;
+  font-style: normal;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+img {
+  border-radius: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#copyright {
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgba(11, 61, 77, 0.603);
+}
+
+.authors {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-authors {
+  font-stretch: ultra-expanded;
+  font-size: 22px;
+}
+
+ul {
+  list-style: none;
+  color: rgb(106, 142, 35);
+}
+
+li:first-child {
+  font-weight: bold;
+}
+/* 
+li:nth-child(even) {
+  color: red;
+} */
+
+a:link {
+  color: fuchsia;
+  text-decoration: none;
+}
+a:visited {
+  color: greenyellow;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  color: fuchsia;
+  text-decoration: none;
+}
+
+/* #copyright {
+  color: green;
+} */
+
+.text {
+  color: red;
+}
+
+.copyright {
+  color: blueviolet;
+}
+
+footer p {
+  color: black;
+}
+.img-li {
+  width: 50%;
+  height: auto;
+}
+
+nav a:link {
+  background-color: orangered;
+  margin: 15px;
+  margin-right: 30px;
+  margin-top: 20px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.like-button {
+  font-size: 22px;
+  padding: 20px;
+  display: inline;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-size: 40px;
+}
+
+/* p + h2 {
+  color: red;
+} */
+
+.top-heading {
+  position: relative;
+}
+.top-heading::after {
+  content: "TOP";
+  display: inline-block;
+  font-size: 18px;
+  background-color: yellow;
+  padding: 5px;
+  color: black;
+  font-style: italic;
+  position: absolute;
+  right: -20px;
+  top: 10px;
+}
