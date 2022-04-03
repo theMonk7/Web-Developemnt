@@ -8,79 +8,95 @@
   </head>
   <body>
     <div class="container">
-    <header class="main-header">
-    <h1 class="page-heading">📘 The Code Magazine</h1>
+
+      <header class="main-header">
+        <h1 class="page-heading">📘 The Code Magazine</h1>
       <nav class="nav-group">
         <a href="blog.html">BLOG</a>
-        <a href="#">Challenges</a>
-        <a href="#">Flexbox</a>
+        <a href="html-css-course/starter/04-CSS-Layouts/flexbox.html">Challenges</a>
+        <a href="html-css-course/starter/04-CSS-Layouts/css-grid.html">Flexbox</a>
         <a href="#">CSS Grid</a>
       </nav>
-     
-    </header>
-  <article>
-    <header>
-      <h2 class="top-heading">The Basic Language of the Web: HTML</h2>
-      <img src="Image Assets/author.png" height="15%" width=100" alt="Author image" class="author-image"/>
-      <p id="author" class="authors">Posted by <strong>Laura Jones</strong> on Monday, <em>June 21st 2027</em></p>
-    </header>
-    <p class="main-body1">
-      All modern websites and web applications are built using three fundamental
-      technologies: HTML, CSS and JavaScript. These are the languages of the
-      web. 
-      <p>In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.</p>
-    </p>
-    <h2>What is HTML?</h2>
-    <p>
-      HTML stands for <strong>HyperText Markup Language</strong>. It's a markup language that web
-      developers use to structure and describe the content of a webpage (not a
-      programming language). HTML consists of elements that describe different
-      types of content: paragraphs, links, headings, images, video, etc. Web
-      browsers understand HTML and render HTML code as websites. In HTML, each
-      element is made up of 3 parts: 
-      <ol>
-      <li>The opening tag </li>
-      <li>The closing tag </li>
-      <li>The actual element Web Docs.</li>
       
-    </ol>
-    <a href="https://www.google.com/" target="_blank">www.google.com</a>
-    </p>
-    <h2>Why should you learn HTML?</h2>
-    <p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
-    <ul>
-      <li class="first-li">To be able to use the fundamental web dev language</li>
-      <li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
-      <li>To build web applications</li>
-      <li>To impress friends</li>
-      <li>To have fun 😃</li>
-    </ul>
-  </article>
-  <aside>
-    <h4>Related Posts</h4>
-    <ul>
-      <li class="first-li">
-        <img class="img-li" src="Image Assets/M FOX.jpg" height ="200" width="300" alt="good image"/>
-        <a href="https://www.espn.com" target="_blank">While she lays</a>
-        <p class="related-authors">by Photographer 1</p>
-      </li>
-      <li>
-        <img class="img-li" src="Image Assets/MEGAN FOX.jpg" height ="200" width="300" alt="good image"/>
-        <a href="https://www.espn.com" target="_blank">While she slays</a>
-        <p class="related-authors">by Photographer 2</p>
-      </li>
-      <li>
-        <img class="img-li" src="Image Assets/MM FOXX.jpg" height ="200" width="300" alt="good image"/>
-        <a href="https://www.espn.com" target="_blank">Just random shots</a>
-        <p class="related-authors">by Photographer 3</p>
-      </li>
-    </ul>
-  </aside>
+    </header>
+    <div class="two-part">
+
+      <article>
+        <header>
+          <h2 class="top-heading">The Basic Language of the Web: HTML</h2>
+          <div class="author-header">
+            <img src="Image Assets/author.png" height="15%" width=100" alt="Author image" class="author-image"/>
+            <p id="author" class="authors">Posted by <strong>Laura Jones</strong> on Monday, <em>June 21st 2027</em></p>
+          </div>
+        </header>
+        <p class="main-body1">
+          All modern websites and web applications are built using three fundamental
+          technologies: HTML, CSS and JavaScript. These are the languages of the
+          web. 
+          <p>In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.</p>
+        </p>
+        <h2>What is HTML?</h2>
+        <p>
+          HTML stands for <strong>HyperText Markup Language</strong>. It's a markup language that web
+          developers use to structure and describe the content of a webpage (not a
+          programming language). HTML consists of elements that describe different
+          types of content: paragraphs, links, headings, images, video, etc. Web
+          browsers understand HTML and render HTML code as websites. In HTML, each
+          element is made up of 3 parts: 
+          <ol>
+            <li>The opening tag </li>
+            <li>The closing tag </li>
+            <li>The actual element Web Docs.</li>
+            
+          </ol>
+          <a href="https://www.google.com/" target="_blank">www.google.com</a>
+        </p>
+        <h2>Why should you learn HTML?</h2>
+        <p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
+        <ul>
+          <li class="first-li">To be able to use the fundamental web dev language</li>
+          <li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
+          <li>To build web applications</li>
+          <li>To impress friends</li>
+          <li>To have fun 😃</li>
+        </ul>
+      </article>
+      <aside>
+        <h4>Related Posts</h4>
+        <ul class="related-posts">
+          <li class="first-li related">
+            <img class="img-li" src="Image Assets/M FOX.jpg" height ="200" width="300" alt="good image"/>
+            <div class="rel-sec">
+              
+              <a href="https://www.espn.com" target="_blank" class="rel-link">While she lays</a>
+              <p class="related-authors">by Photographer 1</p>
+            </div>
+          </li>
+          <li class="related">
+            <img class="img-li" src="Image Assets/MEGAN FOX.jpg" height ="200" width="300" alt="good image"/>
+            <div class="rel-sec">
+              
+              <a href="https://www.espn.com" target="_blank" class="rel-link">While she slays</a>
+              <p class="related-authors">by Photographer 2</p>
+            </div>
+          </li>
+          <li class="related">
+            <img class="img-li" src="Image Assets/MM FOXX.jpg" height ="200" width="300" alt="good image"/>
+            <div class="rel-sec">
+              
+              <a href="https://www.espn.com" target="_blank" class="rel-link">Just random shots</a>
+              <p class="related-authors">by Photographer 3</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
   <footer>
     <p id="copyright" class="copyright text">Copyright &copy; 2027 by the Utkarsh Raj</p>
   </footer>
   <button class="like-button">Like💖</button>
+  
 </div>
 
-  </body>
+</body>
 </html>

@@ -32,12 +32,12 @@ aside {
   border-top: 5px solid aqua;
   border-bottom: 5px solid aqua;
   padding: 50px 0;
-  width: 50%;
+  width: 60%;
 }
 
 ul,
 ol {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 h1 {
   font-size: 24px;
@@ -93,7 +93,6 @@ footer p {
 }
 
 .related-authors {
-  font-stretch: ultra-expanded;
   font-size: 22px;
 }
 
@@ -189,7 +188,7 @@ h1::first-letter {
   top: 10px;
 }
 
-/* FLOATS */
+/* FLOATS
 .author-image {
   float: left;
 }
@@ -237,4 +236,50 @@ aside {
 
 footer {
   clear: both;
+} */
+
+/* FLEX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-header {
+  display: flex;
+  align-items: center;
+}
+
+.authors {
+  margin-bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.related {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.related-authors {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 16px;
+  color: #999;
+}
+
+.two-part {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+aside {
+  flex: 1;
+}
+
+article {
+  flex: 0 1 60%;
 }
