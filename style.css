@@ -10,7 +10,7 @@ body {
   position: relative;
 }
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
 }
@@ -40,7 +40,7 @@ ol {
   margin-left: 50px;
 }
 h1 {
-  font-size: 36px;
+  font-size: 24px;
   text-transform: capitalize;
   font-style: oblique;
 }
@@ -86,11 +86,6 @@ footer p {
   font-size: 16px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: rgba(11, 61, 77, 0.603);
-}
-
-.authors {
-  font-size: 18px;
-  font-weight: bold;
 }
 
 #author {
@@ -155,10 +150,8 @@ footer p {
 }
 
 nav a:link {
-  background-color: orangered;
-  margin: 15px;
-  margin-right: 30px;
-  margin-top: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
   padding: 5px;
   display: inline-block;
 }
@@ -173,7 +166,7 @@ nav a:link {
 }
 
 h1::first-letter {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 /* p + h2 {
@@ -194,4 +187,40 @@ h1::first-letter {
   position: absolute;
   right: -20px;
   top: 10px;
+}
+
+/* FLOATS */
+.author-image {
+  float: left;
+}
+
+.authors {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 30px;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.main-body1 {
+  margin-top: 200px;
+}
+
+.page-heading {
+  float: left;
+}
+
+.nav-group {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.main-header::after {
+  clear: both;
+  content: "";
+  display: block;
 }
