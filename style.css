@@ -5,7 +5,7 @@
 }
 
 body {
-  border-top: 5px solid aqua;
+  border-top: 5px solid rgba(1, 249, 249, 0.629);
   font-family: sans-serif;
   color: #444;
   position: relative;
@@ -18,26 +18,24 @@ body {
 h1,
 h2,
 h3 {
-  color: rgb(19, 223, 155);
+  color: rgb(0, 127, 85);
 }
 
 .main-header {
-  margin-bottom: 60px;
   background-color: #f7f7f7;
   padding: 20px;
 }
 
 aside {
   background-color: #f7f7f7;
-  border-top: 5px solid aqua;
-  border-bottom: 5px solid aqua;
-  padding: 50px 0;
-  width: 60%;
+  border-top: 5px solid rgb(0, 120, 120);
+  border-bottom: 5px solid rgb(0, 120, 120);
+  /* padding: 50px 0; */
 }
 
 ul,
 ol {
-  margin-left: 20px;
+  margin-left: 5px;
 }
 h1 {
   font-size: 24px;
@@ -271,15 +269,47 @@ footer {
   color: #999;
 }
 
-.two-part {
+/* .two-part {
   display: flex;
   gap: 50px;
   align-items: flex-start;
-}
-aside {
+} */
+/* aside {
   flex: 1;
 }
 
 article {
   flex: 0 1 60%;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+  /* grid-row: 1 / 2; */
+}
+
+article {
+}
+
+aside {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  justify-content: stretch;
+  align-items: start;
+}
+
+footer {
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+aside li {
+  margin-bottom: 50px;
 }
