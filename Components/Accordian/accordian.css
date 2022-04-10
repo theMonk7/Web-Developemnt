@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+}
+
+/* Here are class properties */
+
+.accordian {
+  width: 70%;
+  margin: 100px auto;
+  background-color: red;
+}
