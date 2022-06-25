@@ -262,12 +262,6 @@
   color: #e67e22;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
 .list-icon {
   width: 3rem;
   height: 3rem;
@@ -340,4 +334,250 @@
 }
 .gallery-item img:hover {
   transform: scale(1.2);
+}
+
+/* ******************************* */
+/*  SECTION PRICING */
+/* ******************************* */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  padding: 4.8rem;
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-plan--complete::after {
+  content: "Best Value";
+  position: absolute;
+  text-transform: uppercase;
+  top: 6%;
+  right: -18%;
+  background-color: #ffd43b;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature {
+}
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* ******************************* */
+/*  CTA SECTION  */
+/* ******************************* */
+.section-cta {
+  padding: 10rem 0 12.8rem;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.45);
+  border-radius: 1.1rem;
+  background-image: linear-gradient(to right bottom, #eb9843, #e67e22);
+}
+
+.cta-text-box {
+  color: #2e1907;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.cta .heading-secondary {
+  color: #2e1907;
+  margin-bottom: 3.2rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(30, 81%, 59%, 0.501),
+      hsla(28, 80%, 52%, 0.496)
+    ),
+    url(/07-Omnifood-Desktop/content/img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1x 2px rgba(0, 0, 0, 0.2);
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta-form select {
+}
+.cta-form button {
+  color: #fdf2e9;
+  font-family: inherit;
+}
+.cta *:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem hsla(26, 84%, 95%, 0.5);
+}
+
+/* ******************************* */
+/*  FOOTER  */
+/* ******************************* */
+
+.footer {
+  padding: 10rem 0;
+  border-top: 1px solid #eee;
+}
+.grid-footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+.footer-nav {
+  list-style-type: none;
+  display: grid;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #767676;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #444;
+}
+.social-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-icons {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+.copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.address {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts {
+  margin-bottom: 2.4rem;
 }
